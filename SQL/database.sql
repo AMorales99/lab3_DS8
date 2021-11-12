@@ -1,0 +1,3 @@
+CREATE DATABASE bancoDS8
+
+USE bancoDS8
