@@ -33,10 +33,10 @@ Partial Class FormMDI
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.BackColor = System.Drawing.Color.LightSkyBlue
+        Me.MenuStrip1.BackColor = System.Drawing.Color.RoyalBlue
         Me.MenuStrip1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RegistrarClienteToolStripMenuItem, Me.CrearCuentaToolStripMenuItem, Me.DepósitoRetiroToolStripMenuItem, Me.MovimientosToolStripMenuItem, Me.PresentaciónToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PresentaciónToolStripMenuItem, Me.RegistrarClienteToolStripMenuItem, Me.CrearCuentaToolStripMenuItem, Me.DepósitoRetiroToolStripMenuItem, Me.MovimientosToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
@@ -74,6 +74,7 @@ Partial Class FormMDI
         '
         'PresentaciónToolStripMenuItem
         '
+        Me.PresentaciónToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.PresentaciónToolStripMenuItem.Name = "PresentaciónToolStripMenuItem"
         Me.PresentaciónToolStripMenuItem.Size = New System.Drawing.Size(121, 25)
         Me.PresentaciónToolStripMenuItem.Text = "Presentación"
