@@ -1,5 +1,11 @@
-﻿Public Class FormCrearCuenta
-    Private Sub txtNombreCompleto_TextChanged(sender As Object, e As EventArgs) Handles txtNombreCompleto.TextChanged
+﻿
+Imports System.Data.SqlClient
+Imports System.Net
+Public Class FormCrearCuenta
+    Private Sub btnCrear_Click(sender As Object, e As EventArgs) Handles btnCrear.Click
+
+
+
 
     End Sub
 End Class

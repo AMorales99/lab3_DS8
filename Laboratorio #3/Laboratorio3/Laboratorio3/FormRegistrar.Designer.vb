@@ -30,11 +30,11 @@ Partial Class FormRegistrar
         Me.Label5 = New System.Windows.Forms.Label()
         Me.btnRegistrar = New System.Windows.Forms.Button()
         Me.btnBorrar = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.txtNombre = New System.Windows.Forms.TextBox()
+        Me.txtApellido = New System.Windows.Forms.TextBox()
+        Me.txtTelefono = New System.Windows.Forms.TextBox()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.rtxtDireccion = New System.Windows.Forms.RichTextBox()
         Me.SuspendLayout()
         '
         'Label1
@@ -114,7 +114,7 @@ Partial Class FormRegistrar
         Me.btnBorrar.Text = "Borrar"
         Me.btnBorrar.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'txtNombre
         '
         Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(298, 129)
@@ -123,7 +123,7 @@ Partial Class FormRegistrar
         Me.TextBox1.Size = New System.Drawing.Size(311, 34)
         Me.TextBox1.TabIndex = 7
         '
-        'TextBox3
+        'txtApellido
         '
         Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox3.Location = New System.Drawing.Point(731, 129)
@@ -132,7 +132,7 @@ Partial Class FormRegistrar
         Me.TextBox3.Size = New System.Drawing.Size(311, 34)
         Me.TextBox3.TabIndex = 9
         '
-        'TextBox4
+        'txtTelefono
         '
         Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox4.Location = New System.Drawing.Point(186, 223)
@@ -147,7 +147,7 @@ Partial Class FormRegistrar
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
         Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
         '
-        'RichTextBox1
+        'rtxtDireccion
         '
         Me.RichTextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RichTextBox1.Location = New System.Drawing.Point(186, 313)
@@ -189,9 +189,9 @@ Partial Class FormRegistrar
     Friend WithEvents Label5 As Label
     Friend WithEvents btnRegistrar As Button
     Friend WithEvents btnBorrar As Button
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents txtNombre As TextBox
+    Friend WithEvents txtApellido As TextBox
+    Friend WithEvents txtTelefono As TextBox
     Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
-    Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents rtxtDireccion As RichTextBox
 End Class

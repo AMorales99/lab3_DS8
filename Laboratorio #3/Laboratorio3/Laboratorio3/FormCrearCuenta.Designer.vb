@@ -32,6 +32,7 @@ Partial Class FormCrearCuenta
         Me.btnCrear = New System.Windows.Forms.Button()
         Me.btnBorrar = New System.Windows.Forms.Button()
         Me.txtNombreCompleto = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -50,6 +51,7 @@ Partial Class FormCrearCuenta
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(237, 277)
+        Me.Label2.Location = New System.Drawing.Point(180, 273)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(137, 25)
@@ -61,6 +63,7 @@ Partial Class FormCrearCuenta
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(237, 220)
+        Me.Label3.Location = New System.Drawing.Point(255, 217)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(62, 25)
@@ -82,6 +85,7 @@ Partial Class FormCrearCuenta
         '
         Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(395, 273)
+        Me.TextBox1.Location = New System.Drawing.Point(339, 273)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(311, 30)
@@ -102,6 +106,7 @@ Partial Class FormCrearCuenta
         Me.ComboBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox2.FormattingEnabled = True
         Me.ComboBox2.Location = New System.Drawing.Point(309, 217)
+        Me.ComboBox2.Location = New System.Drawing.Point(339, 217)
         Me.ComboBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(396, 33)
@@ -136,6 +141,14 @@ Partial Class FormCrearCuenta
         Me.txtNombreCompleto.Name = "txtNombreCompleto"
         Me.txtNombreCompleto.Size = New System.Drawing.Size(367, 34)
         Me.txtNombreCompleto.TabIndex = 13
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(468, 13)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(51, 17)
+        Me.Label5.TabIndex = 13
+        Me.Label5.Text = "Label5"
         '
         'FormCrearCuenta
         '
@@ -144,6 +157,7 @@ Partial Class FormCrearCuenta
         Me.BackColor = System.Drawing.Color.LightBlue
         Me.ClientSize = New System.Drawing.Size(948, 450)
         Me.Controls.Add(Me.txtNombreCompleto)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.btnBorrar)
         Me.Controls.Add(Me.btnCrear)
         Me.Controls.Add(Me.ComboBox2)
@@ -171,4 +185,5 @@ Partial Class FormCrearCuenta
     Friend WithEvents btnCrear As Button
     Friend WithEvents btnBorrar As Button
     Friend WithEvents txtNombreCompleto As TextBox
+    Friend WithEvents Label5 As Label
 End Class

@@ -45,24 +45,28 @@ Partial Class FormMDI
         '
         'RegistrarClienteToolStripMenuItem
         '
+        Me.RegistrarClienteToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.RegistrarClienteToolStripMenuItem.Name = "RegistrarClienteToolStripMenuItem"
         Me.RegistrarClienteToolStripMenuItem.Size = New System.Drawing.Size(184, 32)
         Me.RegistrarClienteToolStripMenuItem.Text = "Registrar Cliente"
         '
         'CrearCuentaToolStripMenuItem
         '
+        Me.CrearCuentaToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.CrearCuentaToolStripMenuItem.Name = "CrearCuentaToolStripMenuItem"
         Me.CrearCuentaToolStripMenuItem.Size = New System.Drawing.Size(148, 32)
         Me.CrearCuentaToolStripMenuItem.Text = "Crear Cuenta"
         '
         'DepósitoRetiroToolStripMenuItem
         '
+        Me.DepósitoRetiroToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.DepósitoRetiroToolStripMenuItem.Name = "DepósitoRetiroToolStripMenuItem"
         Me.DepósitoRetiroToolStripMenuItem.Size = New System.Drawing.Size(178, 32)
         Me.DepósitoRetiroToolStripMenuItem.Text = "Depósito/Retiro"
         '
         'MovimientosToolStripMenuItem
         '
+        Me.MovimientosToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.MovimientosToolStripMenuItem.Name = "MovimientosToolStripMenuItem"
         Me.MovimientosToolStripMenuItem.Size = New System.Drawing.Size(150, 32)
         Me.MovimientosToolStripMenuItem.Text = "Movimientos"
@@ -82,10 +86,10 @@ Partial Class FormMDI
         Me.Controls.Add(Me.MenuStrip1)
         Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Margin = New System.Windows.Forms.Padding(4)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "FormMDI"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Menú Principal"
+        Me.Text = "Form1"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
