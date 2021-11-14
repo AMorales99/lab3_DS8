@@ -72,11 +72,23 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="FormCrearCuenta.Designer.vb">
+      <DependentUpon>FormCrearCuenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormCrearCuenta.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="FormMDI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMDI.Designer.vb">
+      <DependentUpon>FormMDI.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistrar.Designer.vb">
+      <DependentUpon>FormRegistrar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistrar.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -96,6 +108,15 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FormCrearCuenta.resx">
+      <DependentUpon>FormCrearCuenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMDI.resx">
+      <DependentUpon>FormMDI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistrar.resx">
+      <DependentUpon>FormRegistrar.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>

@@ -1,0 +1,14 @@
+D:\Program Files\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\bin\Debug\Laboratorio3.exe.config
+D:\Program Files\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\bin\Debug\Laboratorio3.exe
+D:\Program Files\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\bin\Debug\Laboratorio3.pdb
+D:\Program Files\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\bin\Debug\Laboratorio3.xml
+D:\Program Files\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\obj\Debug\Laboratorio3.vbproj.AssemblyReference.cache
+D:\Program Files\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\obj\Debug\Laboratorio3.Resources.resources
+D:\Program Files\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\obj\Debug\Laboratorio3.vbproj.GenerateResource.cache
+D:\Program Files\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\obj\Debug\Laboratorio3.vbproj.CoreCompileInputs.cache
+D:\Program Files\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\obj\Debug\Laboratorio3.exe
+D:\Program Files\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\obj\Debug\Laboratorio3.xml
+D:\Program Files\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\obj\Debug\Laboratorio3.pdb
+D:\Program Files\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\obj\Debug\Laboratorio3.FormMDI.resources
+D:\Program Files\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\obj\Debug\Laboratorio3.FormCrearCuenta.resources
+D:\Program Files\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\obj\Debug\Laboratorio3.FormRegistrar.resources
