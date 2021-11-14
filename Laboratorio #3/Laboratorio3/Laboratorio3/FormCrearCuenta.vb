@@ -18,13 +18,8 @@ Public Class FormCrearCuenta
         If cboTipoCuenta.Text = "Cuenta De Ahorros" Then
             cboTipo = 1
         End If
-        query = "Insert into tbl_datoscliente (id_cliente, nombre, apellido, telefono_movil, direccion, fecha_creacion)Values ("
-        query &= "" & 4 & ""
-        query &= ",'" & cboTipo "'"
-        query &= ",'" & txtApellido1.Text & "'"
-        query &= ",'" & txtTelefono1.Text & "'"
-        query &= ",'" & rtxtDireccion1.Text & "'"
-        query &= ", GETDATE()" & ")"
+
+
         Try
 
             comando = New SqlCommand(query, mYConn)
