@@ -12,3 +12,5 @@ D:\Program Files\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\obj\De
 D:\Program Files\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\obj\Debug\Laboratorio3.FormMDI.resources
 D:\Program Files\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\obj\Debug\Laboratorio3.FormCrearCuenta.resources
 D:\Program Files\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\obj\Debug\Laboratorio3.FormRegistrar.resources
+D:\Program Files\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\obj\Debug\Laboratorio3.FormDepoReti.resources
+D:\Program Files\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\obj\Debug\Laboratorio3.FormMovimientos.resources
