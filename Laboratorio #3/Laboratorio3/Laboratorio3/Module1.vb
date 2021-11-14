@@ -10,7 +10,7 @@ Module Module1
         Dim servidorDb As String = "", nameDb As String = "", usuario As String = "", pass As String = ""
         lecturaXML(servidorDb, nameDb, usuario, pass)
         cadenadeconexion = "data source =" & servidorDb & " ; initial catalog =" & nameDb & "; user id =" & usuario & " ; password =" & pass
-        MsgBox(cadenadeconexion)
+        'MsgBox(cadenadeconexion)'
         mYConn = New SqlConnection(cadenadeconexion)
     End Sub
 
@@ -31,7 +31,7 @@ Module Module1
             pass = DecodeBase64(mxml.ReadElementString("pass"))
 
 
-            MsgBox(servidorDb + " " + nameDb + " " + usuario + " " + pass)
+            'MsgBox(servidorDb + " " + nameDb + " " + usuario + " " + pass)'
 
         End While
         mxml.Close()
