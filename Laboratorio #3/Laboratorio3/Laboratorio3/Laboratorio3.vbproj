@@ -185,7 +185,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Archivo\datacon.xml" />
-    <None Include="Resources\lupa.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

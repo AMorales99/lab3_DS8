@@ -35,6 +35,10 @@ Partial Class FormRegistrar
         Me.txtTelefono = New System.Windows.Forms.TextBox()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.rtxtDireccion = New System.Windows.Forms.RichTextBox()
+        Me.txtNombre1 = New System.Windows.Forms.TextBox()
+        Me.txtTelefono1 = New System.Windows.Forms.TextBox()
+        Me.rtxtDireccion1 = New System.Windows.Forms.RichTextBox()
+        Me.txtApellido1 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'Label1
@@ -95,8 +99,8 @@ Partial Class FormRegistrar
         'btnRegistrar
         '
         Me.btnRegistrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRegistrar.Location = New System.Drawing.Point(622, 473)
-        Me.btnRegistrar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnRegistrar.Location = New System.Drawing.Point(638, 473)
+        Me.btnRegistrar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnRegistrar.Name = "btnRegistrar"
         Me.btnRegistrar.Size = New System.Drawing.Size(197, 40)
         Me.btnRegistrar.TabIndex = 5
@@ -106,8 +110,8 @@ Partial Class FormRegistrar
         'btnBorrar
         '
         Me.btnBorrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBorrar.Location = New System.Drawing.Point(398, 473)
-        Me.btnBorrar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnBorrar.Location = New System.Drawing.Point(414, 473)
+        Me.btnBorrar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnBorrar.Name = "btnBorrar"
         Me.btnBorrar.Size = New System.Drawing.Size(197, 40)
         Me.btnBorrar.TabIndex = 6
@@ -116,30 +120,24 @@ Partial Class FormRegistrar
         '
         'txtNombre
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(298, 129)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(311, 34)
-        Me.TextBox1.TabIndex = 7
+        Me.txtNombre.Location = New System.Drawing.Point(0, 0)
+        Me.txtNombre.Name = "txtNombre"
+        Me.txtNombre.Size = New System.Drawing.Size(100, 22)
+        Me.txtNombre.TabIndex = 0
         '
         'txtApellido
         '
-        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(731, 129)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(311, 34)
-        Me.TextBox3.TabIndex = 9
+        Me.txtApellido.Location = New System.Drawing.Point(0, 0)
+        Me.txtApellido.Name = "txtApellido"
+        Me.txtApellido.Size = New System.Drawing.Size(100, 22)
+        Me.txtApellido.TabIndex = 0
         '
         'txtTelefono
         '
-        Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(186, 223)
-        Me.TextBox4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(311, 34)
-        Me.TextBox4.TabIndex = 10
+        Me.txtTelefono.Location = New System.Drawing.Point(0, 0)
+        Me.txtTelefono.Name = "txtTelefono"
+        Me.txtTelefono.Size = New System.Drawing.Size(100, 22)
+        Me.txtTelefono.TabIndex = 0
         '
         'ContextMenuStrip1
         '
@@ -149,13 +147,44 @@ Partial Class FormRegistrar
         '
         'rtxtDireccion
         '
-        Me.RichTextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RichTextBox1.Location = New System.Drawing.Point(186, 313)
-        Me.RichTextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(856, 116)
-        Me.RichTextBox1.TabIndex = 12
-        Me.RichTextBox1.Text = ""
+        Me.rtxtDireccion.Location = New System.Drawing.Point(0, 0)
+        Me.rtxtDireccion.Name = "rtxtDireccion"
+        Me.rtxtDireccion.Size = New System.Drawing.Size(100, 96)
+        Me.rtxtDireccion.TabIndex = 0
+        Me.rtxtDireccion.Text = ""
+        '
+        'txtNombre1
+        '
+        Me.txtNombre1.Font = New System.Drawing.Font("Microsoft YaHei UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNombre1.Location = New System.Drawing.Point(302, 126)
+        Me.txtNombre1.Name = "txtNombre1"
+        Me.txtNombre1.Size = New System.Drawing.Size(308, 37)
+        Me.txtNombre1.TabIndex = 7
+        '
+        'txtTelefono1
+        '
+        Me.txtTelefono1.Font = New System.Drawing.Font("Microsoft YaHei UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTelefono1.Location = New System.Drawing.Point(186, 218)
+        Me.txtTelefono1.Name = "txtTelefono1"
+        Me.txtTelefono1.Size = New System.Drawing.Size(292, 37)
+        Me.txtTelefono1.TabIndex = 9
+        '
+        'rtxtDireccion1
+        '
+        Me.rtxtDireccion1.Font = New System.Drawing.Font("Microsoft YaHei UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rtxtDireccion1.Location = New System.Drawing.Point(186, 312)
+        Me.rtxtDireccion1.Name = "rtxtDireccion1"
+        Me.rtxtDireccion1.Size = New System.Drawing.Size(847, 139)
+        Me.rtxtDireccion1.TabIndex = 11
+        Me.rtxtDireccion1.Text = ""
+        '
+        'txtApellido1
+        '
+        Me.txtApellido1.Font = New System.Drawing.Font("Microsoft YaHei UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtApellido1.Location = New System.Drawing.Point(741, 126)
+        Me.txtApellido1.Name = "txtApellido1"
+        Me.txtApellido1.Size = New System.Drawing.Size(308, 37)
+        Me.txtApellido1.TabIndex = 12
         '
         'FormRegistrar
         '
@@ -163,10 +192,10 @@ Partial Class FormRegistrar
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.LightBlue
         Me.ClientSize = New System.Drawing.Size(1205, 554)
-        Me.Controls.Add(Me.RichTextBox1)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtApellido1)
+        Me.Controls.Add(Me.rtxtDireccion1)
+        Me.Controls.Add(Me.txtTelefono1)
+        Me.Controls.Add(Me.txtNombre1)
         Me.Controls.Add(Me.btnBorrar)
         Me.Controls.Add(Me.btnRegistrar)
         Me.Controls.Add(Me.Label5)
@@ -174,7 +203,7 @@ Partial Class FormRegistrar
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "FormRegistrar"
         Me.Text = "FormRegistrar"
         Me.ResumeLayout(False)
@@ -194,4 +223,8 @@ Partial Class FormRegistrar
     Friend WithEvents txtTelefono As TextBox
     Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
     Friend WithEvents rtxtDireccion As RichTextBox
+    Friend WithEvents txtNombre1 As TextBox
+    Friend WithEvents txtTelefono1 As TextBox
+    Friend WithEvents rtxtDireccion1 As RichTextBox
+    Friend WithEvents txtApellido1 As TextBox
 End Class

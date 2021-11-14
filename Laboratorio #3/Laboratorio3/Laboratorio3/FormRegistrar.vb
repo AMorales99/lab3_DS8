@@ -7,10 +7,10 @@ Public Class FormRegistrar
         Dim comando As SqlCommand
         query = "Insert into tbl_datoscliente (id_cliente, nombre, apellido, telefono_movil, direccion, fecha_creacion)Values ("
         query &= "" & 4 & ""
-        query &= ",'" & txtNombre.Text & "'"
-        query &= ",'" & txtApellido.Text & "'"
-        query &= ",'" & txtTelefono.Text & "'"
-        query &= ",'" & rtxtDireccion.Text & "'"
+        query &= ",'" & txtNombre1.Text & "'"
+        query &= ",'" & txtApellido1.Text & "'"
+        query &= ",'" & txtTelefono1.Text & "'"
+        query &= ",'" & rtxtDireccion1.Text & "'"
         query &= ", GETDATE()" & ")"
         Try
 
@@ -40,4 +40,5 @@ Public Class FormRegistrar
         End If
 
     End Sub
+
 End Class
