@@ -37,10 +37,10 @@ Partial Class FormCrearCuenta
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(13, 18)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(17, 22)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(242, 31)
+        Me.Label1.Size = New System.Drawing.Size(301, 39)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "CREAR CUENTA"
         '
@@ -48,8 +48,8 @@ Partial Class FormCrearCuenta
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(167, 245)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(223, 302)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(164, 29)
         Me.Label2.TabIndex = 2
@@ -59,8 +59,8 @@ Partial Class FormCrearCuenta
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(257, 188)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Location = New System.Drawing.Point(343, 231)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(74, 29)
         Me.Label3.TabIndex = 3
@@ -70,8 +70,8 @@ Partial Class FormCrearCuenta
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(228, 129)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Location = New System.Drawing.Point(304, 159)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(103, 29)
         Me.Label4.TabIndex = 4
@@ -80,10 +80,10 @@ Partial Class FormCrearCuenta
         'txtSaldo
         '
         Me.txtSaldo.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSaldo.Location = New System.Drawing.Point(339, 242)
-        Me.txtSaldo.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtSaldo.Location = New System.Drawing.Point(452, 298)
+        Me.txtSaldo.Margin = New System.Windows.Forms.Padding(5)
         Me.txtSaldo.Name = "txtSaldo"
-        Me.txtSaldo.Size = New System.Drawing.Size(396, 34)
+        Me.txtSaldo.Size = New System.Drawing.Size(527, 34)
         Me.txtSaldo.TabIndex = 8
         Me.txtSaldo.Text = "0.00"
         '
@@ -91,19 +91,19 @@ Partial Class FormCrearCuenta
         '
         Me.cboTipoCuenta.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboTipoCuenta.FormattingEnabled = True
-        Me.cboTipoCuenta.Location = New System.Drawing.Point(339, 185)
-        Me.cboTipoCuenta.Margin = New System.Windows.Forms.Padding(4)
+        Me.cboTipoCuenta.Location = New System.Drawing.Point(452, 228)
+        Me.cboTipoCuenta.Margin = New System.Windows.Forms.Padding(5)
         Me.cboTipoCuenta.Name = "cboTipoCuenta"
-        Me.cboTipoCuenta.Size = New System.Drawing.Size(396, 37)
+        Me.cboTipoCuenta.Size = New System.Drawing.Size(527, 37)
         Me.cboTipoCuenta.TabIndex = 10
         '
         'btnCrear
         '
         Me.btnCrear.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCrear.Location = New System.Drawing.Point(490, 341)
-        Me.btnCrear.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnCrear.Location = New System.Drawing.Point(653, 420)
+        Me.btnCrear.Margin = New System.Windows.Forms.Padding(5)
         Me.btnCrear.Name = "btnCrear"
-        Me.btnCrear.Size = New System.Drawing.Size(204, 51)
+        Me.btnCrear.Size = New System.Drawing.Size(272, 63)
         Me.btnCrear.TabIndex = 11
         Me.btnCrear.Text = "Crear"
         Me.btnCrear.UseVisualStyleBackColor = True
@@ -111,10 +111,10 @@ Partial Class FormCrearCuenta
         'btnBorrar
         '
         Me.btnBorrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBorrar.Location = New System.Drawing.Point(262, 341)
-        Me.btnBorrar.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnBorrar.Location = New System.Drawing.Point(349, 420)
+        Me.btnBorrar.Margin = New System.Windows.Forms.Padding(5)
         Me.btnBorrar.Name = "btnBorrar"
-        Me.btnBorrar.Size = New System.Drawing.Size(204, 51)
+        Me.btnBorrar.Size = New System.Drawing.Size(272, 63)
         Me.btnBorrar.TabIndex = 12
         Me.btnBorrar.Text = "Borrar"
         Me.btnBorrar.UseVisualStyleBackColor = True
@@ -122,18 +122,19 @@ Partial Class FormCrearCuenta
         'txtNombreCompleto
         '
         Me.txtNombreCompleto.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNombreCompleto.Location = New System.Drawing.Point(339, 126)
+        Me.txtNombreCompleto.Location = New System.Drawing.Point(452, 155)
+        Me.txtNombreCompleto.Margin = New System.Windows.Forms.Padding(4)
         Me.txtNombreCompleto.Name = "txtNombreCompleto"
         Me.txtNombreCompleto.ReadOnly = True
-        Me.txtNombreCompleto.Size = New System.Drawing.Size(396, 34)
+        Me.txtNombreCompleto.Size = New System.Drawing.Size(527, 34)
         Me.txtNombreCompleto.TabIndex = 13
         '
         'FormCrearCuenta
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.LightBlue
-        Me.ClientSize = New System.Drawing.Size(711, 366)
+        Me.ClientSize = New System.Drawing.Size(948, 450)
         Me.Controls.Add(Me.txtNombreCompleto)
         Me.Controls.Add(Me.btnBorrar)
         Me.Controls.Add(Me.btnCrear)
@@ -143,6 +144,7 @@ Partial Class FormCrearCuenta
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "FormCrearCuenta"
         Me.Text = "FormCrearCuenta"
         Me.ResumeLayout(False)

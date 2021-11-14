@@ -30,9 +30,6 @@ Module Module1
             usuario = DecodeBase64(mxml.ReadElementString("usuario"))
             pass = DecodeBase64(mxml.ReadElementString("pass"))
 
-
-            MsgBox(servidorDb + " " + nameDb + " " + usuario + " " + pass)
-
         End While
         mxml.Close()
 
