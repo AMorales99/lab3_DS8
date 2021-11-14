@@ -34,46 +34,52 @@ Partial Class FormMDI
         '
         Me.MenuStrip1.BackColor = System.Drawing.Color.DarkBlue
         Me.MenuStrip1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RegistrarClienteToolStripMenuItem, Me.CrearCuentaToolStripMenuItem, Me.DepósitoRetiroToolStripMenuItem, Me.MovimientosToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(800, 29)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1067, 36)
         Me.MenuStrip1.TabIndex = 1
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'RegistrarClienteToolStripMenuItem
         '
+        Me.RegistrarClienteToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.RegistrarClienteToolStripMenuItem.Name = "RegistrarClienteToolStripMenuItem"
-        Me.RegistrarClienteToolStripMenuItem.Size = New System.Drawing.Size(148, 25)
+        Me.RegistrarClienteToolStripMenuItem.Size = New System.Drawing.Size(184, 32)
         Me.RegistrarClienteToolStripMenuItem.Text = "Registrar Cliente"
         '
         'CrearCuentaToolStripMenuItem
         '
+        Me.CrearCuentaToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.CrearCuentaToolStripMenuItem.Name = "CrearCuentaToolStripMenuItem"
-        Me.CrearCuentaToolStripMenuItem.Size = New System.Drawing.Size(120, 25)
+        Me.CrearCuentaToolStripMenuItem.Size = New System.Drawing.Size(148, 32)
         Me.CrearCuentaToolStripMenuItem.Text = "Crear Cuenta"
         '
         'DepósitoRetiroToolStripMenuItem
         '
+        Me.DepósitoRetiroToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.DepósitoRetiroToolStripMenuItem.Name = "DepósitoRetiroToolStripMenuItem"
-        Me.DepósitoRetiroToolStripMenuItem.Size = New System.Drawing.Size(144, 25)
+        Me.DepósitoRetiroToolStripMenuItem.Size = New System.Drawing.Size(178, 32)
         Me.DepósitoRetiroToolStripMenuItem.Text = "Depósito/Retiro"
         '
         'MovimientosToolStripMenuItem
         '
+        Me.MovimientosToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.MovimientosToolStripMenuItem.Name = "MovimientosToolStripMenuItem"
-        Me.MovimientosToolStripMenuItem.Size = New System.Drawing.Size(123, 25)
+        Me.MovimientosToolStripMenuItem.Size = New System.Drawing.Size(150, 32)
         Me.MovimientosToolStripMenuItem.Text = "Movimientos"
         '
         'FormMDI
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DarkBlue
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(1067, 554)
         Me.Controls.Add(Me.MenuStrip1)
         Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip1
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "FormMDI"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"

@@ -31,15 +31,17 @@ Partial Class FormCrearCuenta
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.btnCrear = New System.Windows.Forms.Button()
         Me.btnBorrar = New System.Windows.Forms.Button()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 29)
+        Me.Label1.Location = New System.Drawing.Point(16, 36)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(242, 31)
+        Me.Label1.Size = New System.Drawing.Size(301, 39)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "CREAR CUENTA"
         '
@@ -47,9 +49,10 @@ Partial Class FormCrearCuenta
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(178, 225)
+        Me.Label2.Location = New System.Drawing.Point(180, 273)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(112, 20)
+        Me.Label2.Size = New System.Drawing.Size(137, 25)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Saldo Inicial:"
         '
@@ -57,9 +60,10 @@ Partial Class FormCrearCuenta
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(178, 179)
+        Me.Label3.Location = New System.Drawing.Point(255, 217)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(48, 20)
+        Me.Label3.Size = New System.Drawing.Size(62, 25)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "Tipo:"
         '
@@ -67,44 +71,49 @@ Partial Class FormCrearCuenta
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(178, 130)
+        Me.Label4.Location = New System.Drawing.Point(237, 160)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(70, 20)
+        Me.Label4.Size = New System.Drawing.Size(87, 25)
         Me.Label4.TabIndex = 4
         Me.Label4.Text = "Cliente:"
         '
         'TextBox1
         '
         Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(296, 222)
+        Me.TextBox1.Location = New System.Drawing.Point(339, 273)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(234, 26)
+        Me.TextBox1.Size = New System.Drawing.Size(311, 30)
         Me.TextBox1.TabIndex = 8
         '
         'ComboBox1
         '
         Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(254, 127)
+        Me.ComboBox1.Location = New System.Drawing.Point(339, 156)
+        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(276, 28)
+        Me.ComboBox1.Size = New System.Drawing.Size(367, 33)
         Me.ComboBox1.TabIndex = 9
         '
         'ComboBox2
         '
         Me.ComboBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(232, 176)
+        Me.ComboBox2.Location = New System.Drawing.Point(339, 217)
+        Me.ComboBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(298, 28)
+        Me.ComboBox2.Size = New System.Drawing.Size(396, 33)
         Me.ComboBox2.TabIndex = 10
         '
         'btnCrear
         '
         Me.btnCrear.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCrear.Location = New System.Drawing.Point(351, 293)
+        Me.btnCrear.Location = New System.Drawing.Point(468, 361)
+        Me.btnCrear.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnCrear.Name = "btnCrear"
-        Me.btnCrear.Size = New System.Drawing.Size(110, 31)
+        Me.btnCrear.Size = New System.Drawing.Size(147, 38)
         Me.btnCrear.TabIndex = 11
         Me.btnCrear.Text = "Crear"
         Me.btnCrear.UseVisualStyleBackColor = True
@@ -112,19 +121,30 @@ Partial Class FormCrearCuenta
         'btnBorrar
         '
         Me.btnBorrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBorrar.Location = New System.Drawing.Point(232, 293)
+        Me.btnBorrar.Location = New System.Drawing.Point(309, 361)
+        Me.btnBorrar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnBorrar.Name = "btnBorrar"
-        Me.btnBorrar.Size = New System.Drawing.Size(110, 31)
+        Me.btnBorrar.Size = New System.Drawing.Size(147, 38)
         Me.btnBorrar.TabIndex = 12
         Me.btnBorrar.Text = "Borrar"
         Me.btnBorrar.UseVisualStyleBackColor = True
         '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(468, 13)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(51, 17)
+        Me.Label5.TabIndex = 13
+        Me.Label5.Text = "Label5"
+        '
         'FormCrearCuenta
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.LightBlue
-        Me.ClientSize = New System.Drawing.Size(711, 366)
+        Me.ClientSize = New System.Drawing.Size(948, 450)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.btnBorrar)
         Me.Controls.Add(Me.btnCrear)
         Me.Controls.Add(Me.ComboBox2)
@@ -134,6 +154,7 @@ Partial Class FormCrearCuenta
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "FormCrearCuenta"
         Me.Text = "FormCrearCuenta"
         Me.ResumeLayout(False)
@@ -150,4 +171,5 @@ Partial Class FormCrearCuenta
     Friend WithEvents ComboBox2 As ComboBox
     Friend WithEvents btnCrear As Button
     Friend WithEvents btnBorrar As Button
+    Friend WithEvents Label5 As Label
 End Class
