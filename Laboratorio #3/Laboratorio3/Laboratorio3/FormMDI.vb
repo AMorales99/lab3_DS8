@@ -20,4 +20,16 @@
         FormCrearCuenta.WindowState = FormWindowState.Maximized
         FormCrearCuenta.Show()
     End Sub
+
+    Private Sub DepósitoRetiroToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DepósitoRetiroToolStripMenuItem.Click
+        FormDepoReti.MdiParent = Me
+        FormDepoReti.WindowState = FormWindowState.Maximized
+        FormDepoReti.Show()
+    End Sub
+
+    Private Sub MovimientosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MovimientosToolStripMenuItem.Click
+        FormMovimientos.MdiParent = Me
+        FormMovimientos.WindowState = FormWindowState.Maximized
+        FormMovimientos.Show()
+    End Sub
 End Class

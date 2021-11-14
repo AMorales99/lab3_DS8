@@ -78,11 +78,23 @@
     <Compile Include="FormCrearCuenta.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormDepoReti.Designer.vb">
+      <DependentUpon>FormDepoReti.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormDepoReti.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormMDI.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormMDI.Designer.vb">
       <DependentUpon>FormMDI.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMovimientos.Designer.vb">
+      <DependentUpon>FormMovimientos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMovimientos.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormRegistrar.Designer.vb">
@@ -111,8 +123,14 @@
     <EmbeddedResource Include="FormCrearCuenta.resx">
       <DependentUpon>FormCrearCuenta.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormDepoReti.resx">
+      <DependentUpon>FormDepoReti.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMDI.resx">
       <DependentUpon>FormMDI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMovimientos.resx">
+      <DependentUpon>FormMovimientos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormRegistrar.resx">
       <DependentUpon>FormRegistrar.vb</DependentUpon>
