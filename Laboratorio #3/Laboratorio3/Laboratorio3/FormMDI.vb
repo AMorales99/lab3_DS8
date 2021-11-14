@@ -44,4 +44,9 @@
         Presentacion.WindowState = FormWindowState.Maximized
         Presentacion.Show()
     End Sub
+
+    Private Sub FormMDI_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        If mYConn.State <> ConnectionState.Closed Then mYConn.Close()
+        Form1.Close()
+    End Sub
 End Class
