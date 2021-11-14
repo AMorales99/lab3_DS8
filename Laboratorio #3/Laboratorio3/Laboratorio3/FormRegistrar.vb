@@ -5,9 +5,8 @@ Public Class FormRegistrar
 
         Dim query As String
         Dim comando As SqlCommand
-        query = "Insert into tbl_datoscliente (id_cliente, nombre, apellido, telefono_movil, direccion, fecha_creacion)Values ("
-        query &= "" & 4 & ""
-        query &= ",'" & txtNombre1.Text & "'"
+        query = "Insert into tbl_datoscliente ( nombre, apellido, telefono_movil, direccion, fecha_creacion)Values ("
+        query &= "'" & txtNombre1.Text & "'"
         query &= ",'" & txtApellido1.Text & "'"
         query &= ",'" & txtTelefono1.Text & "'"
         query &= ",'" & rtxtDireccion1.Text & "'"

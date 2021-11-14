@@ -29,6 +29,9 @@
         FormDepoReti.MdiParent = Me
         FormDepoReti.WindowState = FormWindowState.Maximized
         FormDepoReti.Show()
+        FormDepoReti.GroupBox1.Left = FormDepoReti.Width / 2 - (FormDepoReti.GroupBox1.Width / 2)
+        FormDepoReti.GroupBox2.Left = FormDepoReti.Width / 2 - (FormDepoReti.GroupBox2.Width / 2)
+        FormDepoReti.GroupBox3.Left = FormDepoReti.Width / 2 - (FormDepoReti.GroupBox3.Width / 2)
     End Sub
 
     Private Sub MovimientosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MovimientosToolStripMenuItem.Click
