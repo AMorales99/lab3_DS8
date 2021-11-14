@@ -90,6 +90,12 @@
     <Compile Include="FormDepoReti.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormEscogerUsuario.Designer.vb">
+      <DependentUpon>FormEscogerUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormEscogerUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormMDI.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Presentacion.Designer.vb">
+      <DependentUpon>Presentacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
@@ -136,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormDepoReti.resx">
       <DependentUpon>FormDepoReti.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEscogerUsuario.resx">
+      <DependentUpon>FormEscogerUsuario.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMDI.resx">
       <DependentUpon>FormMDI.vb</DependentUpon>
@@ -151,6 +166,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion.resx">
+      <DependentUpon>Presentacion.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

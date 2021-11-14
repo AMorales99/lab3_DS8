@@ -18,9 +18,11 @@
     End Sub
 
     Private Sub CrearCuentaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CrearCuentaToolStripMenuItem.Click
-        FormCrearCuenta.MdiParent = Me
-        FormCrearCuenta.WindowState = FormWindowState.Maximized
-        FormCrearCuenta.Show()
+        FormEscogerUsuario.MdiParent = Me
+        FormEscogerUsuario.WindowState = FormWindowState.Maximized
+        FormEscogerUsuario.Show()
+
+        accion = "C"
     End Sub
 
     Private Sub DepósitoRetiroToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DepósitoRetiroToolStripMenuItem.Click
@@ -30,8 +32,16 @@
     End Sub
 
     Private Sub MovimientosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MovimientosToolStripMenuItem.Click
-        FormMovimientos.MdiParent = Me
-        FormMovimientos.WindowState = FormWindowState.Maximized
-        FormMovimientos.Show()
+        FormEscogerUsuario.MdiParent = Me
+        FormEscogerUsuario.WindowState = FormWindowState.Maximized
+        FormEscogerUsuario.Show()
+
+        accion = "M"
+    End Sub
+
+    Private Sub PresentaciónToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PresentaciónToolStripMenuItem.Click
+        Presentacion.MdiParent = Me
+        Presentacion.WindowState = FormWindowState.Maximized
+        Presentacion.Show()
     End Sub
 End Class
