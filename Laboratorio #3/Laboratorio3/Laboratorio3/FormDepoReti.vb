@@ -42,6 +42,8 @@ Start:
                 mYConn.Open()
                 comando.ExecuteNonQuery()
                 MessageBox.Show("Los Datos se insertaron. ")
+                dr.asignar(depositar)
+                txtSaldo.Text = Format(txtSaldo.Text + dr.SaldoActual, "##0.00")
             Catch ex As Exception
                 MessageBox.Show(ex.Message)
             Finally
@@ -107,6 +109,8 @@ Start:
                         mYConn.Open()
                         comando.ExecuteNonQuery()
                         MessageBox.Show("Los Datos se insertaron. ")
+                        dr.asignar(depositar)
+                        txtSaldo.Text = Format(txtSaldo.Text - dr.SaldoActual, "##0.00")
                     Catch ex As Exception
                         MessageBox.Show(ex.Message)
                     Finally
@@ -129,5 +133,9 @@ Start:
             MsgBox(ex.ToString)
 
         End Try
+    End Sub
+
+    Private Sub rbDeposito_CheckedChanged(sender As Object, e As EventArgs) Handles rbDeposito.CheckedChanged
+
     End Sub
 End Class

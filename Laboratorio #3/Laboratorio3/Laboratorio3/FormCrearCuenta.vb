@@ -36,6 +36,7 @@ Public Class FormCrearCuenta
                 mYConn.Open()
                 comando.ExecuteNonQuery()
                 MessageBox.Show("Se ha creado la cuenta exitosamente")
+
             Catch ex As Exception
                 MessageBox.Show("No se ha podido crear la cuenta, inténtelo nuevamente..." & idUsuario & " " & cboTipo)
             Finally
