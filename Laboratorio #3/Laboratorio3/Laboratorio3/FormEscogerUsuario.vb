@@ -6,11 +6,11 @@ Public Class FormEscogerUsuario
         Dim dt As New DataTable
         Dim query As String
         If accion = "D" Then
-            query = "Select dC.id_cliente As 'ID Usuario', dC.nombre As Nombre, dC.apellido As Apellido, c.id_cuenta As 'ID De La Cuenta', c.tipo As Tipo, c.saldo As Saldo 
+            query = "Select dC.id_cliente As 'ID Usuario', dC.nombre As Nombre, dC.apellido As Apellido, c.id_cuenta As 'ID Cuenta', c.tipo As Tipo, c.saldo As Saldo 
                      From tbl_datoscliente dC right join tbl_cuenta c On dC.id_cliente = c.id_cliente
                      Order By dC.id_cliente, tipo"
         Else
-            query = "Select id_cliente, nombre, apellido From tbl_datoscliente"
+            query = "Select id_cliente As 'ID Usuario', nombre As Nombre, apellido As Apellido From tbl_datoscliente"
         End If
 
         da = New SqlDataAdapter(query, mYConn)
