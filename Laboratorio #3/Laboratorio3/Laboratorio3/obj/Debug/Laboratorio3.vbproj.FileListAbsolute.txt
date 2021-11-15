@@ -55,3 +55,4 @@ D:\Program Files\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\obj\De
 D:\Program Files\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\obj\Debug\Laboratorio3.Presentacion.resources
 C:\Users\User\Documents\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\obj\Debug\Laboratorio3.FormEscogerUsuario.resources
 C:\Users\User\Documents\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\obj\Debug\Laboratorio3.Presentacion.resources
+C:\Users\leone\Documents\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\obj\Debug\Laboratorio3.FormEscogerUsuario2.resources
