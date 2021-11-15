@@ -4,7 +4,15 @@ Public Class FormEscogerUsuario
     Private Sub FormEscogerUsuario_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim da As SqlDataAdapter
         Dim dt As New DataTable
-        Dim query As String = "Select id_cliente, nombre, apellido From tbl_datoscliente"
+        Dim query As String
+        If accion = "D" Then
+            query = "Select dC.id_cliente As 'ID Usuario', dC.nombre As Nombre, dC.apellido As Apellido, c.id_cuenta As 'ID De La Cuenta', c.tipo As Tipo, c.saldo As Saldo 
+                     From tbl_datoscliente dC right join tbl_cuenta c On dC.id_cliente = c.id_cliente
+                     Order By dC.id_cliente, tipo"
+        Else
+            query = "Select id_cliente, nombre, apellido From tbl_datoscliente"
+        End If
+
         da = New SqlDataAdapter(query, mYConn)
         da.Fill(dt)
         If dt.Rows.Count Then
@@ -25,6 +33,25 @@ Public Class FormEscogerUsuario
                 FormCrearCuenta.txtNombreCompleto.Text = dtgListaUsuarios.Item(1, e.RowIndex).Value.ToString & " " & dtgListaUsuarios.Item(2, e.RowIndex).Value.ToString
                 accion = dtgListaUsuarios.Item(0, e.RowIndex).Value.ToString
                 FormCrearCuenta.Show()
+
+            End If
+        ElseIf accion = "D" Then
+            nombreEmpleado = dtgListaUsuarios.Item(1, e.RowIndex).Value.ToString & " " & dtgListaUsuarios.Item(2, e.RowIndex).Value.ToString
+            Dim nombreCuenta As String = "Cuenta Corriente"
+            Dim cuenta As String = dtgListaUsuarios.Item(4, e.RowIndex).Value.ToString
+            If (cuenta = "1") Then
+                nombreCuenta = "Cuenta De Ahorros"
+            End If
+            pregunta = MsgBox("¿Desea depositar/retirar dinero del usuario " & nombreEmpleado & " en la cuenta " & cuenta & "?", vbYesNo)
+            If pregunta = vbYes Then
+                FormDepoReti.MdiParent = FormMDI
+                FormDepoReti.WindowState = FormWindowState.Maximized
+                FormDepoReti.txtNombreCompleto.Text = dtgListaUsuarios.Item(1, e.RowIndex).Value.ToString & " " & dtgListaUsuarios.Item(2, e.RowIndex).Value.ToString
+                FormDepoReti.txtNombreCuenta.Text = nombreCuenta
+                FormDepoReti.txtNumCuenta.Text = dtgListaUsuarios.Item(3, e.RowIndex).Value.ToString
+                FormDepoReti.txtSaldo.Text = dtgListaUsuarios.Item(5, e.RowIndex).Value.ToString
+                accion = dtgListaUsuarios.Item(0, e.RowIndex).Value.ToString
+                FormDepoReti.Show()
 
             End If
         Else

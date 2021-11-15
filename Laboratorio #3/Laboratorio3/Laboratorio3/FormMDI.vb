@@ -7,6 +7,7 @@
     End Sub
 
     Private Sub CrearCuentaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CrearCuentaToolStripMenuItem.Click
+        FormEscogerUsuario.Close()
         FormEscogerUsuario.MdiParent = Me
         FormEscogerUsuario.WindowState = FormWindowState.Maximized
         accion = "C"
@@ -15,14 +16,16 @@
     End Sub
 
     Private Sub DepósitoRetiroToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DepósitoRetiroToolStripMenuItem.Click
-        FormEscogerUsuario2.MdiParent = Me
-        FormEscogerUsuario2.WindowState = FormWindowState.Maximized
+        FormEscogerUsuario.Close()
+        FormEscogerUsuario.MdiParent = Me
+        FormEscogerUsuario.WindowState = FormWindowState.Maximized
         accion = "D"
 
-        FormEscogerUsuario2.Show()
+        FormEscogerUsuario.Show()
     End Sub
 
     Private Sub MovimientosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MovimientosToolStripMenuItem.Click
+        FormEscogerUsuario.Close()
         FormEscogerUsuario.MdiParent = Me
         FormEscogerUsuario.WindowState = FormWindowState.Maximized
         accion = "M"
