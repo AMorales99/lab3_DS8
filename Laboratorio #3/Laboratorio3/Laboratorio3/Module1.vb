@@ -3,6 +3,7 @@ Imports System.Xml
 Module Module1
     Public mYConn As SqlConnection
     Public accion As String
+    Public idUsuario As Integer
     Public idEmpleado As Integer
 
     Sub conexion()
