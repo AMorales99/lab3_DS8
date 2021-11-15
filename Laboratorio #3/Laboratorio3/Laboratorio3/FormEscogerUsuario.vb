@@ -23,7 +23,8 @@ Public Class FormEscogerUsuario
                 FormCrearCuenta.MdiParent = FormMDI
                 FormCrearCuenta.WindowState = FormWindowState.Maximized
                 FormCrearCuenta.txtNombreCompleto.Text = dtgListaUsuarios.Item(1, e.RowIndex).Value.ToString & " " & dtgListaUsuarios.Item(2, e.RowIndex).Value.ToString
-                accion = dtgListaUsuarios.Item(0, e.RowIndex).Value.ToString
+                'idUsuario = dtgListaUsuarios.Item(0, e.RowIndex).Value.ToString
+                accion = "C"
                 FormCrearCuenta.Show()
 
             End If
@@ -33,6 +34,7 @@ Public Class FormEscogerUsuario
                 FormMovimientos.MdiParent = FormMDI
                 FormMovimientos.WindowState = FormWindowState.Maximized
                 FormCrearCuenta.txtNombreCompleto.Text = dtgListaUsuarios.Item(1, e.RowIndex).Value.ToString & " " & dtgListaUsuarios.Item(2, e.RowIndex).Value.ToString
+                'idUsuario = dtgListaUsuarios.Item(0, e.RowIndex).Value.ToString
                 accion = "M"
                 FormMovimientos.Show()
 
@@ -40,4 +42,5 @@ Public Class FormEscogerUsuario
         End If
 
     End Sub
+
 End Class

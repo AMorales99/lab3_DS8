@@ -1,5 +1,16 @@
 ﻿Public Class FormMDI
 
+    ''Color del texo en el MenuStrip
+    Private Sub FormMDI_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        MenuStrip1.ForeColor = Color.White
+    End Sub
+    Private Sub MenuStrip1_MouseHover(sender As Object, e As EventArgs) Handles MenuStrip1.MouseHover
+        MenuStrip1.ForeColor = Color.Black
+    End Sub
+    Private Sub MenuStrip1_MouseLeave(sender As Object, e As EventArgs) Handles MenuStrip1.MouseLeave
+        MenuStrip1.ForeColor = Color.White
+    End Sub
+
     Private Sub RegistrarClienteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RegistrarClienteToolStripMenuItem.Click
         FormRegistrar.MdiParent = Me
         FormRegistrar.WindowState = FormWindowState.Maximized
@@ -9,26 +20,26 @@
     Private Sub CrearCuentaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CrearCuentaToolStripMenuItem.Click
         FormEscogerUsuario.MdiParent = Me
         FormEscogerUsuario.WindowState = FormWindowState.Maximized
-        accion = "C"
-
         FormEscogerUsuario.Show()
+
+        accion = "C"
     End Sub
 
     Private Sub DepósitoRetiroToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DepósitoRetiroToolStripMenuItem.Click
-        FormEscogerUsuario2.MdiParent = Me
-        FormEscogerUsuario2.WindowState = FormWindowState.Maximized
-        accion = "D"
-
-        FormEscogerUsuario2.Show()
+        FormDepoReti.MdiParent = Me
+        FormDepoReti.WindowState = FormWindowState.Maximized
+        FormDepoReti.Show()
+        FormDepoReti.GroupBox1.Left = FormDepoReti.Width / 2 - (FormDepoReti.GroupBox1.Width / 2)
+        FormDepoReti.GroupBox2.Left = FormDepoReti.Width / 2 - (FormDepoReti.GroupBox2.Width / 2)
+        FormDepoReti.GroupBox3.Left = FormDepoReti.Width / 2 - (FormDepoReti.GroupBox3.Width / 2)
     End Sub
 
     Private Sub MovimientosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MovimientosToolStripMenuItem.Click
         FormEscogerUsuario.MdiParent = Me
         FormEscogerUsuario.WindowState = FormWindowState.Maximized
-        accion = "M"
-
         FormEscogerUsuario.Show()
 
+        accion = "M"
     End Sub
 
     Private Sub PresentaciónToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PresentaciónToolStripMenuItem.Click
