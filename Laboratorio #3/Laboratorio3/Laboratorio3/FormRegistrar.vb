@@ -13,10 +13,13 @@ Public Class FormRegistrar
         query &= ", GETDATE()" & ")"
         Try
 
+
+
             comando = New SqlCommand(query, mYConn)
             mYConn.Open()
             comando.ExecuteNonQuery()
             MessageBox.Show("Los Datos se insertaron. ")
+
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         Finally
