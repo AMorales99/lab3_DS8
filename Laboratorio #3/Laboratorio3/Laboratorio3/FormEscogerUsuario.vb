@@ -44,7 +44,7 @@ Public Class FormEscogerUsuario
             If (cuenta = "1") Then
                 nombreCuenta = "Cuenta De Ahorros"
             End If
-            pregunta = MsgBox("¿Desea depositar/retirar dinero del usuario " & nombreEmpleado & " en la cuenta " & nombreCuenta & " de número " & numeroCuenta & "?", vbYesNo)
+            pregunta = MsgBox("¿Desea depositar/retirar dinero del usuario " & nombreEmpleado & " en la cuenta " & nombreCuenta & " con ID " & numeroCuenta & "?", vbYesNo)
             If pregunta = vbYes Then
                 FormDepoReti.MdiParent = FormMDI
                 FormDepoReti.WindowState = FormWindowState.Maximized
@@ -61,7 +61,7 @@ Public Class FormEscogerUsuario
             If pregunta = vbYes Then
                 FormMovimientos.MdiParent = FormMDI
                 FormMovimientos.WindowState = FormWindowState.Maximized
-                FormCrearCuenta.txtNombreCompleto.Text = dtgListaUsuarios.Item(1, e.RowIndex).Value.ToString & " " & dtgListaUsuarios.Item(2, e.RowIndex).Value.ToString
+                FormMovimientos.txtNombreCompleto.Text = dtgListaUsuarios.Item(1, e.RowIndex).Value.ToString & " " & dtgListaUsuarios.Item(2, e.RowIndex).Value.ToString
                 idUsuario = dtgListaUsuarios.Item(0, e.RowIndex).Value.ToString
                 accion = "M"
                 FormMovimientos.Show()
