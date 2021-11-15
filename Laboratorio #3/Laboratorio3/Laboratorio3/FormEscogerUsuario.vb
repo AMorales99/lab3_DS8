@@ -2,6 +2,7 @@
 
 Public Class FormEscogerUsuario
     Private Sub FormEscogerUsuario_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        dtgListaUsuarios.Left = Me.Width / 2 - (dtgListaUsuarios.Width / 2)
         Dim da As SqlDataAdapter
         Dim dt As New DataTable
         Dim query As String
@@ -39,10 +40,11 @@ Public Class FormEscogerUsuario
             nombreEmpleado = dtgListaUsuarios.Item(1, e.RowIndex).Value.ToString & " " & dtgListaUsuarios.Item(2, e.RowIndex).Value.ToString
             Dim nombreCuenta As String = "Cuenta Corriente"
             Dim cuenta As String = dtgListaUsuarios.Item(4, e.RowIndex).Value.ToString
+            Dim numeroCuenta As String = dtgListaUsuarios.Item(3, e.RowIndex).Value.ToString
             If (cuenta = "1") Then
                 nombreCuenta = "Cuenta De Ahorros"
             End If
-            pregunta = MsgBox("¿Desea depositar/retirar dinero del usuario " & nombreEmpleado & " en la cuenta " & cuenta & "?", vbYesNo)
+            pregunta = MsgBox("¿Desea depositar/retirar dinero del usuario " & nombreEmpleado & " en la cuenta " & nombreCuenta & " de número " & numeroCuenta & "?", vbYesNo)
             If pregunta = vbYes Then
                 FormDepoReti.MdiParent = FormMDI
                 FormDepoReti.WindowState = FormWindowState.Maximized

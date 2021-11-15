@@ -41,12 +41,17 @@ Partial Class FormEscogerUsuario
         '
         Me.dtgListaUsuarios.AllowUserToAddRows = False
         Me.dtgListaUsuarios.AllowUserToDeleteRows = False
+        Me.dtgListaUsuarios.BackgroundColor = System.Drawing.Color.RoyalBlue
+        Me.dtgListaUsuarios.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.dtgListaUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dtgListaUsuarios.Cursor = System.Windows.Forms.Cursors.Hand
         Me.dtgListaUsuarios.Location = New System.Drawing.Point(67, 108)
         Me.dtgListaUsuarios.Name = "dtgListaUsuarios"
         Me.dtgListaUsuarios.ReadOnly = True
+        Me.dtgListaUsuarios.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         Me.dtgListaUsuarios.RowHeadersWidth = 51
         Me.dtgListaUsuarios.RowTemplate.Height = 24
+        Me.dtgListaUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dtgListaUsuarios.Size = New System.Drawing.Size(924, 384)
         Me.dtgListaUsuarios.TabIndex = 1
         '
@@ -54,7 +59,7 @@ Partial Class FormEscogerUsuario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.White
+        Me.BackColor = System.Drawing.Color.LightBlue
         Me.ClientSize = New System.Drawing.Size(1067, 554)
         Me.Controls.Add(Me.dtgListaUsuarios)
         Me.Controls.Add(Me.Label1)

@@ -4,11 +4,6 @@ Public Class FormDepoReti
 
 
     Dim dr As New depret
-    Private Sub btnProcesar_Click(sender As Object, e As EventArgs) Handles btnProcesar.Click
-
-
-    End Sub
-
 
     Private Sub rbDeposito_Click(sender As Object, e As EventArgs) Handles rbDeposito.Click
 
@@ -41,7 +36,7 @@ Start:
                 comando = New SqlCommand(query, mYConn)
                 mYConn.Open()
                 comando.ExecuteNonQuery()
-                MessageBox.Show("Los Datos se insertaron. ")
+                MessageBox.Show("¡Se ha depositado exitosamente!")
                 dr.asignar(depositar)
                 txtSaldo.Text = Format(txtSaldo.Text + dr.SaldoActual, "##0.00")
             Catch ex As Exception
@@ -56,7 +51,7 @@ Start:
 
 
         Else
-            MsgBox("debe ingresar un monto valido")
+            MsgBox("Debe ingresar un monto valido")
             GoTo Start
 
         End If
@@ -96,7 +91,7 @@ Start:
                 If saldo < depositar Then
 
 
-                    MsgBox("Saldo Insuficiente")
+                    MsgBox("Saldo insuficiente, inténtelo nuevamente...")
 
                 Else
                     query = "insert into tbl_movimientos (id_cuenta, deposito, retiro, fecha) values("
@@ -109,7 +104,7 @@ Start:
                         comando = New SqlCommand(query, mYConn)
                         mYConn.Open()
                         comando.ExecuteNonQuery()
-                        MessageBox.Show("Los Datos se insertaron. ")
+                        MessageBox.Show("¡Se ha retirado el dinero exitosamente!")
                         dr.asignar(depositar)
                         txtSaldo.Text = Format(txtSaldo.Text - dr.SaldoActual, "##0.00")
                     Catch ex As Exception

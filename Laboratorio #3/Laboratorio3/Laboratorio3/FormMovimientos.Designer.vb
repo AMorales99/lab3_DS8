@@ -37,9 +37,10 @@ Partial Class FormMovimientos
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 32)
+        Me.Label1.Location = New System.Drawing.Point(16, 39)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(413, 31)
+        Me.Label1.Size = New System.Drawing.Size(514, 39)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "MOVIMIENTOS DEL CLIENTE"
         '
@@ -47,9 +48,10 @@ Partial Class FormMovimientos
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(108, 107)
+        Me.Label3.Location = New System.Drawing.Point(144, 132)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(70, 20)
+        Me.Label3.Size = New System.Drawing.Size(87, 25)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "Cliente:"
         '
@@ -57,40 +59,46 @@ Partial Class FormMovimientos
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(108, 166)
+        Me.Label4.Location = New System.Drawing.Point(144, 204)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(113, 20)
+        Me.Label4.Size = New System.Drawing.Size(140, 25)
         Me.Label4.TabIndex = 4
         Me.Label4.Text = "Movimientos:"
         '
         'btnBuscar
         '
         Me.btnBuscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBuscar.Location = New System.Drawing.Point(479, 102)
+        Me.btnBuscar.Location = New System.Drawing.Point(639, 126)
+        Me.btnBuscar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnBuscar.Name = "btnBuscar"
-        Me.btnBuscar.Size = New System.Drawing.Size(110, 31)
+        Me.btnBuscar.Size = New System.Drawing.Size(147, 38)
         Me.btnBuscar.TabIndex = 12
         Me.btnBuscar.Text = "Buscar"
         Me.btnBuscar.UseVisualStyleBackColor = True
         '
         'dtgMovimientos
         '
+        Me.dtgMovimientos.AllowUserToAddRows = False
+        Me.dtgMovimientos.AllowUserToDeleteRows = False
         Me.dtgMovimientos.BackgroundColor = System.Drawing.Color.White
         Me.dtgMovimientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dtgMovimientos.Location = New System.Drawing.Point(186, 249)
+        Me.dtgMovimientos.Location = New System.Drawing.Point(248, 306)
+        Me.dtgMovimientos.Margin = New System.Windows.Forms.Padding(4)
         Me.dtgMovimientos.Name = "dtgMovimientos"
         Me.dtgMovimientos.ReadOnly = True
         Me.dtgMovimientos.RowHeadersVisible = False
-        Me.dtgMovimientos.Size = New System.Drawing.Size(336, 325)
+        Me.dtgMovimientos.RowHeadersWidth = 51
+        Me.dtgMovimientos.Size = New System.Drawing.Size(448, 400)
         Me.dtgMovimientos.TabIndex = 13
         '
         'txtNombreCompleto
         '
         Me.txtNombreCompleto.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNombreCompleto.Location = New System.Drawing.Point(183, 102)
-        Me.txtNombreCompleto.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtNombreCompleto.Location = New System.Drawing.Point(244, 126)
+        Me.txtNombreCompleto.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtNombreCompleto.Name = "txtNombreCompleto"
-        Me.txtNombreCompleto.Size = New System.Drawing.Size(276, 28)
+        Me.txtNombreCompleto.Size = New System.Drawing.Size(367, 34)
         Me.txtNombreCompleto.TabIndex = 14
         '
         'rdbDepositos
@@ -98,9 +106,10 @@ Partial Class FormMovimientos
         Me.rdbDepositos.AutoSize = True
         Me.rdbDepositos.Checked = True
         Me.rdbDepositos.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rdbDepositos.Location = New System.Drawing.Point(186, 200)
+        Me.rdbDepositos.Location = New System.Drawing.Point(248, 246)
+        Me.rdbDepositos.Margin = New System.Windows.Forms.Padding(4)
         Me.rdbDepositos.Name = "rdbDepositos"
-        Me.rdbDepositos.Size = New System.Drawing.Size(99, 24)
+        Me.rdbDepositos.Size = New System.Drawing.Size(120, 29)
         Me.rdbDepositos.TabIndex = 16
         Me.rdbDepositos.TabStop = True
         Me.rdbDepositos.Text = "Depositos"
@@ -110,9 +119,10 @@ Partial Class FormMovimientos
         '
         Me.rdbRetiros.AutoSize = True
         Me.rdbRetiros.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rdbRetiros.Location = New System.Drawing.Point(317, 200)
+        Me.rdbRetiros.Location = New System.Drawing.Point(423, 246)
+        Me.rdbRetiros.Margin = New System.Windows.Forms.Padding(4)
         Me.rdbRetiros.Name = "rdbRetiros"
-        Me.rdbRetiros.Size = New System.Drawing.Size(78, 24)
+        Me.rdbRetiros.Size = New System.Drawing.Size(93, 29)
         Me.rdbRetiros.TabIndex = 18
         Me.rdbRetiros.TabStop = True
         Me.rdbRetiros.Text = "Retiros"
@@ -120,10 +130,10 @@ Partial Class FormMovimientos
         '
         'FormMovimientos
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.LightBlue
-        Me.ClientSize = New System.Drawing.Size(1065, 586)
+        Me.ClientSize = New System.Drawing.Size(1420, 721)
         Me.Controls.Add(Me.rdbRetiros)
         Me.Controls.Add(Me.rdbDepositos)
         Me.Controls.Add(Me.txtNombreCompleto)
@@ -132,6 +142,7 @@ Partial Class FormMovimientos
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label1)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "FormMovimientos"
         Me.Text = "FormMovimientos"
         CType(Me.dtgMovimientos, System.ComponentModel.ISupportInitialize).EndInit()
