@@ -97,6 +97,12 @@
     <Compile Include="FormEscogerUsuario.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormEscogerUsuario2.Designer.vb">
+      <DependentUpon>FormEscogerUsuario2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormEscogerUsuario2.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormMDI.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +158,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormEscogerUsuario.resx">
       <DependentUpon>FormEscogerUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEscogerUsuario2.resx">
+      <DependentUpon>FormEscogerUsuario2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMDI.resx">
       <DependentUpon>FormMDI.vb</DependentUpon>
