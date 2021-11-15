@@ -24,15 +24,15 @@ Partial Class FormDepoReti
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.txtCuenta = New System.Windows.Forms.ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.btnDatos = New System.Windows.Forms.Button()
-        Me.txtNombre1 = New System.Windows.Forms.TextBox()
+        Me.txtSaldo = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.btnProcesar = New System.Windows.Forms.Button()
         Me.rbDeposito = New System.Windows.Forms.RadioButton()
         Me.rbRetiro = New System.Windows.Forms.RadioButton()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtCliente = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
@@ -63,15 +63,15 @@ Partial Class FormDepoReti
         Me.Label3.TabIndex = 12
         Me.Label3.Text = "Cliente:"
         '
-        'ComboBox1
+        'txtCuenta
         '
-        Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(156, 157)
-        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(368, 33)
-        Me.ComboBox1.TabIndex = 15
+        Me.txtCuenta.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCuenta.FormattingEnabled = True
+        Me.txtCuenta.Location = New System.Drawing.Point(156, 157)
+        Me.txtCuenta.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtCuenta.Name = "txtCuenta"
+        Me.txtCuenta.Size = New System.Drawing.Size(368, 33)
+        Me.txtCuenta.TabIndex = 15
         '
         'Label2
         '
@@ -96,14 +96,14 @@ Partial Class FormDepoReti
         Me.btnDatos.Text = "Datos"
         Me.btnDatos.UseVisualStyleBackColor = True
         '
-        'txtNombre1
+        'txtSaldo
         '
-        Me.txtNombre1.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNombre1.Location = New System.Drawing.Point(138, 62)
-        Me.txtNombre1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.txtNombre1.Name = "txtNombre1"
-        Me.txtNombre1.Size = New System.Drawing.Size(368, 33)
-        Me.txtNombre1.TabIndex = 18
+        Me.txtSaldo.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSaldo.Location = New System.Drawing.Point(138, 62)
+        Me.txtSaldo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtSaldo.Name = "txtSaldo"
+        Me.txtSaldo.Size = New System.Drawing.Size(368, 33)
+        Me.txtSaldo.TabIndex = 18
         '
         'Label4
         '
@@ -156,23 +156,23 @@ Partial Class FormDepoReti
         Me.rbRetiro.Text = "Retiro"
         Me.rbRetiro.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'txtCliente
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(156, 100)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(368, 33)
-        Me.TextBox1.TabIndex = 22
+        Me.txtCliente.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCliente.Location = New System.Drawing.Point(156, 100)
+        Me.txtCliente.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtCliente.Name = "txtCliente"
+        Me.txtCliente.ReadOnly = True
+        Me.txtCliente.Size = New System.Drawing.Size(368, 33)
+        Me.txtCliente.TabIndex = 22
         '
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.txtCliente)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Controls.Add(Me.ComboBox1)
+        Me.GroupBox1.Controls.Add(Me.txtCuenta)
         Me.GroupBox1.Controls.Add(Me.btnDatos)
         Me.GroupBox1.Location = New System.Drawing.Point(99, 30)
         Me.GroupBox1.Name = "GroupBox1"
@@ -192,7 +192,7 @@ Partial Class FormDepoReti
         '
         'GroupBox3
         '
-        Me.GroupBox3.Controls.Add(Me.txtNombre1)
+        Me.GroupBox3.Controls.Add(Me.txtSaldo)
         Me.GroupBox3.Controls.Add(Me.Label4)
         Me.GroupBox3.Controls.Add(Me.btnProcesar)
         Me.GroupBox3.Location = New System.Drawing.Point(66, 443)
@@ -225,15 +225,15 @@ Partial Class FormDepoReti
 
     Friend WithEvents Label1 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents txtCuenta As ComboBox
     Friend WithEvents Label2 As Label
     Friend WithEvents btnDatos As Button
-    Friend WithEvents txtNombre1 As TextBox
+    Friend WithEvents txtSaldo As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents btnProcesar As Button
     Friend WithEvents rbDeposito As RadioButton
     Friend WithEvents rbRetiro As RadioButton
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtCliente As TextBox
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents GroupBox3 As GroupBox
