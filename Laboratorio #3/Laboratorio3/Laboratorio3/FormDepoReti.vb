@@ -13,8 +13,8 @@
         Dim cuenta As Integer
         Dim saldo As Decimal
 
-        nombre = txtCliente.Text
-        cuenta = Val(txtCuenta.Text)
+        nombre = txtNombreCompleto.Text
+        'cuenta = Val(txtCuenta.Text)
         saldo = Val(txtSaldo.Text)
 
 
@@ -24,7 +24,7 @@ Start:
         depositar = InputBox("Ingrese el monto a Depositar ", "Deposito")
 
         If IsNumeric(depositar) Then
-            MsgBox(txtCuenta.Text)
+            'MsgBox(txtCuenta.Text)
             dr.asignar(depositar)
 
 
@@ -34,6 +34,10 @@ Start:
 
         End If
 
+
+    End Sub
+
+    Private Sub txtNumCuenta_TextChanged(sender As Object, e As EventArgs) Handles txtNumCuenta.TextChanged
 
     End Sub
 End Class

@@ -24,7 +24,6 @@ Partial Class FormDepoReti
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.txtCuenta = New System.Windows.Forms.ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.btnDatos = New System.Windows.Forms.Button()
         Me.txtSaldo = New System.Windows.Forms.TextBox()
@@ -32,10 +31,13 @@ Partial Class FormDepoReti
         Me.btnProcesar = New System.Windows.Forms.Button()
         Me.rbDeposito = New System.Windows.Forms.RadioButton()
         Me.rbRetiro = New System.Windows.Forms.RadioButton()
-        Me.txtCliente = New System.Windows.Forms.TextBox()
+        Me.txtNombreCompleto = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.txtNombreCuenta = New System.Windows.Forms.TextBox()
+        Me.txtNumCuenta = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -63,16 +65,6 @@ Partial Class FormDepoReti
         Me.Label3.TabIndex = 12
         Me.Label3.Text = "Cliente:"
         '
-        'txtCuenta
-        '
-        Me.txtCuenta.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCuenta.FormattingEnabled = True
-        Me.txtCuenta.Location = New System.Drawing.Point(156, 157)
-        Me.txtCuenta.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtCuenta.Name = "txtCuenta"
-        Me.txtCuenta.Size = New System.Drawing.Size(368, 33)
-        Me.txtCuenta.TabIndex = 15
-        '
         'Label2
         '
         Me.Label2.AutoSize = True
@@ -88,7 +80,7 @@ Partial Class FormDepoReti
         '
         Me.btnDatos.BackgroundImage = Global.Laboratorio3.My.Resources.Resources.lupa
         Me.btnDatos.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDatos.Location = New System.Drawing.Point(627, 122)
+        Me.btnDatos.Location = New System.Drawing.Point(633, 99)
         Me.btnDatos.Margin = New System.Windows.Forms.Padding(4)
         Me.btnDatos.Name = "btnDatos"
         Me.btnDatos.Size = New System.Drawing.Size(100, 34)
@@ -102,6 +94,7 @@ Partial Class FormDepoReti
         Me.txtSaldo.Location = New System.Drawing.Point(138, 62)
         Me.txtSaldo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtSaldo.Name = "txtSaldo"
+        Me.txtSaldo.ReadOnly = True
         Me.txtSaldo.Size = New System.Drawing.Size(368, 33)
         Me.txtSaldo.TabIndex = 18
         '
@@ -156,23 +149,25 @@ Partial Class FormDepoReti
         Me.rbRetiro.Text = "Retiro"
         Me.rbRetiro.UseVisualStyleBackColor = True
         '
-        'txtCliente
+        'txtNombreCompleto
         '
-        Me.txtCliente.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCliente.Location = New System.Drawing.Point(156, 100)
-        Me.txtCliente.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.txtCliente.Name = "txtCliente"
-        Me.txtCliente.ReadOnly = True
-        Me.txtCliente.Size = New System.Drawing.Size(368, 33)
-        Me.txtCliente.TabIndex = 22
+        Me.txtNombreCompleto.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNombreCompleto.Location = New System.Drawing.Point(156, 95)
+        Me.txtNombreCompleto.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtNombreCompleto.Name = "txtNombreCompleto"
+        Me.txtNombreCompleto.ReadOnly = True
+        Me.txtNombreCompleto.Size = New System.Drawing.Size(368, 33)
+        Me.txtNombreCompleto.TabIndex = 22
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Label5)
+        Me.GroupBox1.Controls.Add(Me.txtNumCuenta)
+        Me.GroupBox1.Controls.Add(Me.txtNombreCuenta)
         Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Controls.Add(Me.txtCliente)
+        Me.GroupBox1.Controls.Add(Me.txtNombreCompleto)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Controls.Add(Me.txtCuenta)
         Me.GroupBox1.Controls.Add(Me.btnDatos)
         Me.GroupBox1.Location = New System.Drawing.Point(99, 30)
         Me.GroupBox1.Name = "GroupBox1"
@@ -201,6 +196,37 @@ Partial Class FormDepoReti
         Me.GroupBox3.TabIndex = 25
         Me.GroupBox3.TabStop = False
         '
+        'txtNombreCuenta
+        '
+        Me.txtNombreCuenta.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNombreCuenta.Location = New System.Drawing.Point(156, 153)
+        Me.txtNombreCuenta.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtNombreCuenta.Name = "txtNombreCuenta"
+        Me.txtNombreCuenta.ReadOnly = True
+        Me.txtNombreCuenta.Size = New System.Drawing.Size(368, 33)
+        Me.txtNombreCuenta.TabIndex = 23
+        '
+        'txtNumCuenta
+        '
+        Me.txtNumCuenta.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNumCuenta.Location = New System.Drawing.Point(678, 153)
+        Me.txtNumCuenta.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtNumCuenta.Name = "txtNumCuenta"
+        Me.txtNumCuenta.ReadOnly = True
+        Me.txtNumCuenta.Size = New System.Drawing.Size(140, 33)
+        Me.txtNumCuenta.TabIndex = 24
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(564, 157)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(107, 25)
+        Me.Label5.TabIndex = 25
+        Me.Label5.Text = "# Cuenta:"
+        '
         'FormDepoReti
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -225,7 +251,6 @@ Partial Class FormDepoReti
 
     Friend WithEvents Label1 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents txtCuenta As ComboBox
     Friend WithEvents Label2 As Label
     Friend WithEvents btnDatos As Button
     Friend WithEvents txtSaldo As TextBox
@@ -233,8 +258,11 @@ Partial Class FormDepoReti
     Friend WithEvents btnProcesar As Button
     Friend WithEvents rbDeposito As RadioButton
     Friend WithEvents rbRetiro As RadioButton
-    Friend WithEvents txtCliente As TextBox
+    Friend WithEvents txtNombreCompleto As TextBox
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents txtNumCuenta As TextBox
+    Friend WithEvents txtNombreCuenta As TextBox
 End Class
