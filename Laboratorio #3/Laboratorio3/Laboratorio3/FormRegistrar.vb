@@ -39,4 +39,5 @@ Public Class FormRegistrar
         End If
 
     End Sub
+
 End Class
