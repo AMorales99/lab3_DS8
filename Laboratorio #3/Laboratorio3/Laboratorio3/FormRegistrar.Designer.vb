@@ -100,7 +100,7 @@ Partial Class FormRegistrar
         '
         Me.btnRegistrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRegistrar.Location = New System.Drawing.Point(637, 473)
-        Me.btnRegistrar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnRegistrar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnRegistrar.Name = "btnRegistrar"
         Me.btnRegistrar.Size = New System.Drawing.Size(197, 49)
         Me.btnRegistrar.TabIndex = 5
@@ -111,7 +111,7 @@ Partial Class FormRegistrar
         '
         Me.btnBorrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBorrar.Location = New System.Drawing.Point(413, 473)
-        Me.btnBorrar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnBorrar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnBorrar.Name = "btnBorrar"
         Me.btnBorrar.Size = New System.Drawing.Size(197, 49)
         Me.btnBorrar.TabIndex = 6
@@ -207,7 +207,7 @@ Partial Class FormRegistrar
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "FormRegistrar"
         Me.Text = "FormRegistrar"
         Me.ResumeLayout(False)

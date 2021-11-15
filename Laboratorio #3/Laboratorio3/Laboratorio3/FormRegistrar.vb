@@ -28,18 +28,13 @@ Public Class FormRegistrar
 
     End Sub
 
-    Private Sub txtTelefono_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtTelefono.KeyPress
 
 
-        '97 - 122 = Ascii codes for simple letters
-        '65 - 90  = Ascii codes for capital letters
-        '48 - 57  = Ascii codes for numbers
-
+    Private Sub txtTelefono1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtTelefono1.KeyPress
         If Asc(e.KeyChar) <> 8 Then
             If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
                 e.Handled = True
             End If
         End If
-
     End Sub
 End Class

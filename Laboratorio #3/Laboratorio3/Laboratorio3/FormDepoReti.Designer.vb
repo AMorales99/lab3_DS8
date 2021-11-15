@@ -179,12 +179,12 @@ Partial Class FormDepoReti
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(564, 157)
+        Me.Label5.Location = New System.Drawing.Point(545, 157)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(107, 25)
+        Me.Label5.Size = New System.Drawing.Size(116, 25)
         Me.Label5.TabIndex = 25
-        Me.Label5.Text = "# Cuenta:"
+        Me.Label5.Text = "ID Cuenta:"
         '
         'txtNumCuenta
         '
@@ -238,7 +238,7 @@ Partial Class FormDepoReti
         Me.Controls.Add(Me.GroupBox1)
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "FormDepoReti"
-        Me.Text = "FormDepoReti"
+        Me.Text = " "
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
