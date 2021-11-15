@@ -73,7 +73,7 @@ Start:
 
 
         Dim depositar As Decimal
-
+        NumeroyDecimal(depositar, e)
 
         Try
 
@@ -85,6 +85,7 @@ Start:
                 MsgBox("No cuenta con saldo en su cuenta, Proceda a depositar")
 
             Else
+
                 depositar = InputBox("Ingrese el monto a Retirar ", "Retirar")
 
                 If saldo < depositar Then
