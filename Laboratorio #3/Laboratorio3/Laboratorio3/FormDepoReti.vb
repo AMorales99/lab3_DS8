@@ -31,9 +31,10 @@ Start:
         If IsNumeric(depositar) Then
 
 
-            query = "insert into tbl_movimientos (id_cuenta, deposito, fecha) values("
+            query = "insert into tbl_movimientos (id_cuenta, deposito, retiro, fecha) values("
             query &= "'" & numCuenta & "'"
             query &= ",'" & depositar & "'"
+            query &= ", 0"
             query &= ", GETDATE()" & ")"
             Try
 
@@ -95,8 +96,9 @@ Start:
                     MsgBox("Saldo Insuficiente")
 
                 Else
-                    query = "insert into tbl_movimientos (id_cuenta, retiro, fecha) values("
+                    query = "insert into tbl_movimientos (id_cuenta, deposito, retiro, fecha) values("
                     query &= "'" & numCuenta & "'"
+                    query &= ", 0"
                     query &= ",'" & depositar & "'"
                     query &= ", GETDATE()" & ")"
                     Try
@@ -127,9 +129,5 @@ Start:
             MsgBox(ex.ToString)
 
         End Try
-    End Sub
-
-    Private Sub rbDeposito_CheckedChanged(sender As Object, e As EventArgs) Handles rbDeposito.CheckedChanged
-
     End Sub
 End Class
