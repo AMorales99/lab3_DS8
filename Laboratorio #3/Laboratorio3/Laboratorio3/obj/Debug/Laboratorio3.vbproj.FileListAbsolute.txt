@@ -55,3 +55,22 @@ D:\Program Files\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\obj\De
 D:\Program Files\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\obj\Debug\Laboratorio3.Presentacion.resources
 C:\Users\User\Documents\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\obj\Debug\Laboratorio3.FormEscogerUsuario.resources
 C:\Users\User\Documents\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\obj\Debug\Laboratorio3.Presentacion.resources
+C:\Users\jrica\Documents\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\bin\Debug\Laboratorio3.exe.config
+C:\Users\jrica\Documents\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\bin\Debug\Laboratorio3.exe
+C:\Users\jrica\Documents\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\bin\Debug\Laboratorio3.pdb
+C:\Users\jrica\Documents\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\bin\Debug\Laboratorio3.xml
+C:\Users\jrica\Documents\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\obj\Debug\Laboratorio3.vbproj.AssemblyReference.cache
+C:\Users\jrica\Documents\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\obj\Debug\Laboratorio3.Form1.resources
+C:\Users\jrica\Documents\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\obj\Debug\Laboratorio3.FormCrearCuenta.resources
+C:\Users\jrica\Documents\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\obj\Debug\Laboratorio3.FormDepoReti.resources
+C:\Users\jrica\Documents\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\obj\Debug\Laboratorio3.FormEscogerUsuario.resources
+C:\Users\jrica\Documents\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\obj\Debug\Laboratorio3.FormMDI.resources
+C:\Users\jrica\Documents\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\obj\Debug\Laboratorio3.FormMovimientos.resources
+C:\Users\jrica\Documents\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\obj\Debug\Laboratorio3.FormRegistrar.resources
+C:\Users\jrica\Documents\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\obj\Debug\Laboratorio3.Resources.resources
+C:\Users\jrica\Documents\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\obj\Debug\Laboratorio3.Presentacion.resources
+C:\Users\jrica\Documents\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\obj\Debug\Laboratorio3.vbproj.GenerateResource.cache
+C:\Users\jrica\Documents\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\obj\Debug\Laboratorio3.vbproj.CoreCompileInputs.cache
+C:\Users\jrica\Documents\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\obj\Debug\Laboratorio3.exe
+C:\Users\jrica\Documents\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\obj\Debug\Laboratorio3.xml
+C:\Users\jrica\Documents\GitHub\lab3_DS8\Laboratorio #3\Laboratorio3\Laboratorio3\obj\Debug\Laboratorio3.pdb
