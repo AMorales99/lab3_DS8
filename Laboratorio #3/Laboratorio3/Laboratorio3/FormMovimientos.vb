@@ -47,7 +47,4 @@ Public Class FormMovimientos
         If mYConn.State <> ConnectionState.Closed Then mYConn.Close()
     End Sub
 
-    Private Sub FormMovimientos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
 End Class
