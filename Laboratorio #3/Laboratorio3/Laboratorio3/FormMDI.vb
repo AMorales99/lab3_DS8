@@ -20,26 +20,26 @@
     Private Sub CrearCuentaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CrearCuentaToolStripMenuItem.Click
         FormEscogerUsuario.MdiParent = Me
         FormEscogerUsuario.WindowState = FormWindowState.Maximized
-        FormEscogerUsuario.Show()
-
         accion = "C"
+
+        FormEscogerUsuario.Show()
     End Sub
 
     Private Sub DepósitoRetiroToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DepósitoRetiroToolStripMenuItem.Click
-        FormDepoReti.MdiParent = Me
-        FormDepoReti.WindowState = FormWindowState.Maximized
-        FormDepoReti.Show()
-        FormDepoReti.GroupBox1.Left = FormDepoReti.Width / 2 - (FormDepoReti.GroupBox1.Width / 2)
-        FormDepoReti.GroupBox2.Left = FormDepoReti.Width / 2 - (FormDepoReti.GroupBox2.Width / 2)
-        FormDepoReti.GroupBox3.Left = FormDepoReti.Width / 2 - (FormDepoReti.GroupBox3.Width / 2)
+        FormEscogerUsuario2.MdiParent = Me
+        FormEscogerUsuario2.WindowState = FormWindowState.Maximized
+        accion = "D"
+
+        FormEscogerUsuario2.Show()
     End Sub
 
     Private Sub MovimientosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MovimientosToolStripMenuItem.Click
         FormEscogerUsuario.MdiParent = Me
         FormEscogerUsuario.WindowState = FormWindowState.Maximized
+        accion = "M"
+
         FormEscogerUsuario.Show()
 
-        accion = "M"
     End Sub
 
     Private Sub PresentaciónToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PresentaciónToolStripMenuItem.Click

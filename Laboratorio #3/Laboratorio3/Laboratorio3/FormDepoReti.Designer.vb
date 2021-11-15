@@ -24,16 +24,18 @@ Partial Class FormDepoReti
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.btnDatos = New System.Windows.Forms.Button()
-        Me.txtNombre1 = New System.Windows.Forms.TextBox()
+        Me.txtSaldo = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.btnProcesar = New System.Windows.Forms.Button()
         Me.rbDeposito = New System.Windows.Forms.RadioButton()
         Me.rbRetiro = New System.Windows.Forms.RadioButton()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtNombreCompleto = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.txtNumCuenta = New System.Windows.Forms.TextBox()
+        Me.txtNombreCuenta = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.GroupBox1.SuspendLayout()
@@ -63,21 +65,11 @@ Partial Class FormDepoReti
         Me.Label3.TabIndex = 12
         Me.Label3.Text = "Cliente:"
         '
-        'ComboBox1
-        '
-        Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(156, 157)
-        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(368, 33)
-        Me.ComboBox1.TabIndex = 15
-        '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(59, 157)
+        Me.Label2.Location = New System.Drawing.Point(60, 157)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(89, 25)
@@ -87,7 +79,7 @@ Partial Class FormDepoReti
         'btnDatos
         '
         Me.btnDatos.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDatos.Location = New System.Drawing.Point(627, 122)
+        Me.btnDatos.Location = New System.Drawing.Point(644, 94)
         Me.btnDatos.Margin = New System.Windows.Forms.Padding(4)
         Me.btnDatos.Name = "btnDatos"
         Me.btnDatos.Size = New System.Drawing.Size(100, 34)
@@ -95,14 +87,15 @@ Partial Class FormDepoReti
         Me.btnDatos.Text = "Datos"
         Me.btnDatos.UseVisualStyleBackColor = True
         '
-        'txtNombre1
+        'txtSaldo
         '
-        Me.txtNombre1.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNombre1.Location = New System.Drawing.Point(138, 62)
-        Me.txtNombre1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.txtNombre1.Name = "txtNombre1"
-        Me.txtNombre1.Size = New System.Drawing.Size(368, 33)
-        Me.txtNombre1.TabIndex = 18
+        Me.txtSaldo.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSaldo.Location = New System.Drawing.Point(138, 62)
+        Me.txtSaldo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtSaldo.Name = "txtSaldo"
+        Me.txtSaldo.ReadOnly = True
+        Me.txtSaldo.Size = New System.Drawing.Size(368, 33)
+        Me.txtSaldo.TabIndex = 18
         '
         'Label4
         '
@@ -155,29 +148,62 @@ Partial Class FormDepoReti
         Me.rbRetiro.Text = "Retiro"
         Me.rbRetiro.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'txtNombreCompleto
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(156, 100)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(368, 33)
-        Me.TextBox1.TabIndex = 22
+        Me.txtNombreCompleto.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNombreCompleto.Location = New System.Drawing.Point(156, 95)
+        Me.txtNombreCompleto.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtNombreCompleto.Name = "txtNombreCompleto"
+        Me.txtNombreCompleto.ReadOnly = True
+        Me.txtNombreCompleto.Size = New System.Drawing.Size(368, 33)
+        Me.txtNombreCompleto.TabIndex = 22
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Label5)
+        Me.GroupBox1.Controls.Add(Me.txtNumCuenta)
+        Me.GroupBox1.Controls.Add(Me.txtNombreCuenta)
         Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.txtNombreCompleto)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Controls.Add(Me.ComboBox1)
         Me.GroupBox1.Controls.Add(Me.btnDatos)
         Me.GroupBox1.Location = New System.Drawing.Point(99, 30)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(864, 246)
         Me.GroupBox1.TabIndex = 23
         Me.GroupBox1.TabStop = False
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(548, 157)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(107, 25)
+        Me.Label5.TabIndex = 25
+        Me.Label5.Text = "# Cuenta:"
+        '
+        'txtNumCuenta
+        '
+        Me.txtNumCuenta.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNumCuenta.Location = New System.Drawing.Point(662, 153)
+        Me.txtNumCuenta.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtNumCuenta.Name = "txtNumCuenta"
+        Me.txtNumCuenta.ReadOnly = True
+        Me.txtNumCuenta.Size = New System.Drawing.Size(147, 33)
+        Me.txtNumCuenta.TabIndex = 24
+        '
+        'txtNombreCuenta
+        '
+        Me.txtNombreCuenta.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNombreCuenta.Location = New System.Drawing.Point(156, 153)
+        Me.txtNombreCuenta.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtNombreCuenta.Name = "txtNombreCuenta"
+        Me.txtNombreCuenta.ReadOnly = True
+        Me.txtNombreCuenta.Size = New System.Drawing.Size(368, 33)
+        Me.txtNombreCuenta.TabIndex = 23
         '
         'GroupBox2
         '
@@ -191,7 +217,7 @@ Partial Class FormDepoReti
         '
         'GroupBox3
         '
-        Me.GroupBox3.Controls.Add(Me.txtNombre1)
+        Me.GroupBox3.Controls.Add(Me.txtSaldo)
         Me.GroupBox3.Controls.Add(Me.Label4)
         Me.GroupBox3.Controls.Add(Me.btnProcesar)
         Me.GroupBox3.Location = New System.Drawing.Point(66, 443)
@@ -224,16 +250,18 @@ Partial Class FormDepoReti
 
     Friend WithEvents Label1 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents Label2 As Label
     Friend WithEvents btnDatos As Button
-    Friend WithEvents txtNombre1 As TextBox
+    Friend WithEvents txtSaldo As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents btnProcesar As Button
     Friend WithEvents rbDeposito As RadioButton
     Friend WithEvents rbRetiro As RadioButton
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtNombreCompleto As TextBox
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents txtNumCuenta As TextBox
+    Friend WithEvents txtNombreCuenta As TextBox
 End Class

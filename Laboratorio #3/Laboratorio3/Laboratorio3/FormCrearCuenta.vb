@@ -19,7 +19,7 @@ Public Class FormCrearCuenta
         If (cboTipoCuenta.Text = "Cuenta De Ahorros" Or cboTipoCuenta.Text = "Cuenta Corriente") Then
             Dim query As String
             Dim comando As SqlCommand
-            Dim cboTipo = 0
+            Dim cboTipo = 2
             Dim idUsuario = accion
             If cboTipoCuenta.Text = "Cuenta De Ahorros" Then
                 cboTipo = 1
